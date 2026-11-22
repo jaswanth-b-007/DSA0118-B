@@ -1,0 +1,4 @@
+Bicycle TN01 AB 1001 3 days = 60
+TwoWheeler TN02 CD 2002 3 days = 170
+Car TN03 EF 3003 3 days = 500
+ElectricCar TN04 GH 4004 3 days = 650

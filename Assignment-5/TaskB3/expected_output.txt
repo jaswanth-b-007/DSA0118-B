@@ -1,0 +1,6 @@
+Correctness line (hand-verified):
+
+correctness n=10: virtual 5800 switch 5800 variant 5800
+
+All timing lines are Pending execution. Compile with -O2 and record the printed
+millisecond values on the submission machine. Do not copy values from another machine.

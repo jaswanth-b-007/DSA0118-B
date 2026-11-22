@@ -1,0 +1,38 @@
+billing_system.cpp
+------------------
+OP Ravi: 1700
+  SelfPay: 1700
+  Insurance: 1530
+  GovernmentScheme: 1000
+IP Meena: 47500
+  SelfPay: 47500
+  Insurance: 27000
+  GovernmentScheme: 20000
+DAYCARE Kiran: 25000
+  SelfPay: 25000
+  Insurance: 22500
+  GovernmentScheme: 18000
+EMERGENCY Latha: 8000
+  SelfPay: 8000
+  Insurance: 7200
+  GovernmentScheme: 5000
+Day total 82200
+
+complete_todo.cpp
+-----------------
+OP Ravi: 1700
+IP Meena: 47500
+Total 49200
+
+runtime_binding_demo.cpp
+------------------------
+500 ~OPBill ~Bill 
+
+virtual_dtor_demo.cpp (with virtual destructor)
+-----------------------------------------------
+500 ~OPBill ~Bill 
+
+virtual_dtor_demo.cpp (virtual removed from ~Bill)
+--------------------------------------------------
+500 ~Bill 
+AddressSanitizer report pending execution.

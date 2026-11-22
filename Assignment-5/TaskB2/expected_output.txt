@@ -1,0 +1,17 @@
+predict_validate.cpp
+---------------------
+ok done caught negative [log too large] caught too large 
+
+complete_todo.cpp
+-----------------
+approved 40000
+audit: exceeds cover
+claim rejected: exceeds cover
+error: negative amount
+
+error_conditions.cpp
+--------------------
+Actual output and destructor order pending execution.
+Check that each error is caught, that ~Trial messages appear for fully
+constructed objects, and that the top-level catch(...) leaves the program running.
+_address sanitizer report pending execution._

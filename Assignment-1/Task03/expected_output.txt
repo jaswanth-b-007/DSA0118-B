@@ -1,0 +1,17 @@
+--- sizeof and range on this system ---
+bool          1 byte
+char          1 byte   [-128, 127]
+int           4 bytes  [-2147483648, 2147483647]
+unsigned int  4 bytes  [0, 4294967295]
+long long     8 bytes  [-9223372036854775808, 9223372036854775807]
+float         4 bytes  (about 6 digits)
+double        8 bytes  (about 15 digits)
+
+--- type compatibility: int + double + bool ---
+i + d + b = 6.5, sizeof(i + d + b) = 8 (everything is promoted to double)
+
+--- is int enough for a day's collection? ---
+3,000,000 x 2000 paise = 6000000000 paise; INT_MAX = 2147483647
+
+--- precision problem: 0.1 is not exact in binary ---
+0.1 + 0.2 = 0.30000000000000004, (0.1 + 0.2 == 0.3) = false

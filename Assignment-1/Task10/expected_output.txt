@@ -1,0 +1,4 @@
+paise total   = 6559997640
+double rupees = 65599976.4000
+float  rupees = 65599532.0000
+int   total   = -787967104

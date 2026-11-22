@@ -1,0 +1,5 @@
+Airport weekday 12:00 off-peak:        6000
+Airport weekday 09:00 peak:            7200
+Outer Saturday 09:00 discount:         2700
+Middle Sunday 12:00 discount:          1800
+Inner weekday 07:00 unchanged:         1000

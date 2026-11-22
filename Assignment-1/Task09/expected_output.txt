@@ -1,0 +1,40 @@
+--- normal journeys ---
+PASS  Inner  12:00 off-peak  expected 1000  actual 1000
+PASS  Middle 12:00 off-peak  expected 2000  actual 2000
+PASS  Outer  12:00 off-peak  expected 3000  actual 3000
+PASS  Inner  09:00 peak    expected 1200  actual 1200
+PASS  Middle 18:00 peak    expected 2400  actual 2400
+PASS  Outer  08:00 peak    expected 3600  actual 3600
+--- boundary hours (Inner zone) ---
+PASS  07:00 off-peak         expected 1000  actual 1000
+PASS  08:00 peak    expected 1200  actual 1200
+PASS  10:00 off-peak        expected 1000  actual 1000
+PASS  17:00 peak    expected 1200  actual 1200
+PASS  19:00 peak    expected 1200  actual 1200
+PASS  20:00 off-peak        expected 1000  actual 1000
+--- minimum balance boundary ---
+PASS  balance 6000, fare 1000 (leaves exactly 5000) allowed  expected 1  actual 1
+PASS  balance 5999, fare 1000 (leaves 4999) denied        expected 0  actual 0
+PASS  balance after exact-limit journey                     expected 5000  actual 5000
+PASS  next journey refused, balance unchanged               expected 0  actual 0
+PASS  balance still                                         expected 5000  actual 5000
+--- invalid input ---
+PASS  unknown zone 7 rejected  expected 0  actual 0
+PASS  unknown zone -1 rejected expected 0  actual 0
+PASS  negative recharge rejected expected 0  actual 0
+PASS  balance unchanged after bad recharge expected 10000  actual 10000
+PASS  hour "ab" rejected  expected 0  actual 0
+PASS  hour "9x" rejected  expected 0  actual 0
+PASS  hour "24" rejected  expected 0  actual 0
+PASS  hour "-1" rejected  expected 0  actual 0
+PASS  hour "17" accepted  expected 1  actual 1
+--- five journeys, total calculated by hand = 10640 paise ---
+PASS  journey fare expected 1000  actual 1000
+PASS  journey fare expected 2400  actual 2400
+PASS  journey fare expected 3000  actual 3000
+PASS  journey fare expected 3240  actual 3240
+PASS  journey fare expected 1000  actual 1000
+PASS  total of five journeys expected 10640  actual 10640
+PASS  final balance expected 39360  actual 39360
+
+Passed 33, failed 0

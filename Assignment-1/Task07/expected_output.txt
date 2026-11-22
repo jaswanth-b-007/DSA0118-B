@@ -1,0 +1,8 @@
+procedural balance = 5400 paise
+after careless assignment = -500 paise
+
+deduct 1000 -> true, balance 9000
+deduct 3600 -> true, balance 5400
+deduct 2000 -> false, balance 5400
+recharge -500 -> false, balance 5400
+recharge 2000 -> true, balance 7400
